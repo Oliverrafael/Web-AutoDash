@@ -5,6 +5,11 @@ import streamlit as st
 # Lendo os dados
 car_data = pd.read_csv('../vehicles.csv')
 
+# Criando cabeçalho
+st.header('Visualizador de dados')
+
+st.write('incluem fabricantes com menos de 1.000 anúncios')
+
 # Botão para criar histograma
 hist_button = st.button('Criar histograma')
 
